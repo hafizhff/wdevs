@@ -19,6 +19,7 @@ use Magento\Customer\Model\Context as CustomerContext;
 class GetConfig extends Action
 {
     const STATUS_SUCCESS = 'success';
+    const STATUS_ERROR = 'error';
 
     /**
      * @var CollectionFactory
@@ -75,11 +76,19 @@ class GetConfig extends Action
         if ($isAjax) {
             
             try {
-                $response = [
-                    'status' => self::STATUS_SUCCESS,
-                    'enable' => $this->isModuleEnabled(),
-                    'content' => $this->getContent(),
-                ];
+                if ($this->isModuleEnabled() && $this->getContent()) {
+                    $response = [
+                        'status' => self::STATUS_SUCCESS,
+                        'enable' => $this->isModuleEnabled(),
+                        'content' => $this->getContent(),
+                    ];
+                } else {
+                    $response = [
+                        'status' => self::STATUS_ERROR,
+                        'enable' => 0,
+                        'content' => null,
+                    ];
+                }
     
                 $resultJson = $this->resultFactory->create(ResultFactory::TYPE_JSON);
                 $resultJson->setData($response);
