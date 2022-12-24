@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category  Wdevs
+ * @package   Wdevs_CustomBar
+ * @author    Hafizh FF <hafizhff@gmail.com>
+ * @copyright 2022 © Magento All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Wdevs_CustomBar::elements" title="Wdevs Content" module="Wdevs_CustomBar"
+            parent="Magento_Backend::content" resource="Wdevs_CustomBar::elements" sortOrder="70"/>
+        <add id="Wdevs_CustomBar::custombar" title="Top Bar Content" module="Wdevs_CustomBar" sortOrder="71"        parent="Wdevs_CustomBar::elements" action="wdevscustombar/topbar/index" resource="Wdevs_CustomBar::custombar"/>
+    </menu>
+</config>

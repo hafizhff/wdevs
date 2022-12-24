@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category  Wdevs
+ * @package   Wdevs_CustomBar
+ * @author    Hafizh FF <hafizhff@gmail.com>
+ * @copyright 2022 © Magento All rights reserved.
+ */
+ -->
+<config>
+    <system>
+        <tab id="wdevs" translate="label" sortOrder="80">
+            <label>Wdevs</label>
+        </tab>
+        <section id="customBar" translate="label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Custom Bar</label>
+            <tab>wdevs</tab>
+            <resource>Wdevs_CustomBar::settings_configuration</resource>
+            <group id="general" translate="label" sortOrder="11" showInDefault="1" showInWebsite="1">
+                <label>General Settings</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enabled Custom Bar</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

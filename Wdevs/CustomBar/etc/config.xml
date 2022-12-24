@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @category  Wdevs
+ * @package   Wdevs_CustomBar
+ * @author    Hafizh FF <hafizhff@gmail.com>
+ * @copyright 2022 © Magento All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customBar>
+            <general>
+                <enabled>0</enabled>
+            </general>
+        </customBar>
+    </default>
+</config>

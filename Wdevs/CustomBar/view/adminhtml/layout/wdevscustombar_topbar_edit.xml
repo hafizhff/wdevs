@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @category  Wdevs
+ * @package   Wdevs_CustomBar
+ * @author    Hafizh FF <hafizhff@gmail.com>
+ * @copyright 2022 © Magento All rights reserved.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <body>
+        <referenceContainer name="content">
+            <uiComponent name="wdevs_topbar_form"/>
+        </referenceContainer>
+    </body>
+</page>

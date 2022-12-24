@@ -1,0 +1,13 @@
+{
+    "wdevs_custombar": {
+        "column": {
+            "id": true,
+            "title": true,
+            "content": true,
+            "customer_group": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

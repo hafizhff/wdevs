@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!-- 
+/**
+ * @category  Wdevs
+ * @package   Wdevs_CustomBar
+ * @author    Hafizh FF <hafizhff@gmail.com>
+ * @copyright 2022 © Magento All rights reserved.
+ */
+ -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="wdevs_custom_bar" template="Wdevs_CustomBar::html/header/customBar.phtml" ttl="3600" />
+        </referenceContainer>
+	</body>
+</page>
