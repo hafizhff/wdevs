@@ -2,12 +2,14 @@ Wdev test task
 
 This plugin will show custom top bar on the website page based on the customer group.
 Here some features on this plugin :
-1. the plugin can be disable/enable from admin configuration
-2. content can be customized and use wyswyg editor
-3. content can be show based on the customer group (can select multiple customer groups for one content)
+1. The plugin can be disable/enable from admin configuration
+2. Content can be customized and use wyswyg editor
+3. Content can be show based on the customer group (can select multiple customer groups for one content)
 4. Validation to prevent customer group have double customer bar content.
-5. content cab be set dynamically, can be stored, edited and deleted
-6. work with cache like FPC
+5. Content cab be set dynamically, can be stored, edited and deleted
+6. Work with cache like FPC
+7. Plugin have no dependecies and portability with other extension, in other words you only need this plugin to make it running
+8. Plugin support using blank or luma theme.
 
 The technical approach used to build this plugin is create table using db_schema.xml to store custom bar content.
 Form to manage custom bar in the admin using ui_component, and have own menu inside marketing menu.
@@ -37,6 +39,10 @@ Custom bar list :
 Custom bar content : 
 
 <img src="https://i.ibb.co/4MGBDxD/Screen-Shot-2022-12-24-at-14-24-19.png" />
+
+Result : 
+
+<img src="https://i.ibb.co/92LcbWk/Screen-Shot-2022-12-24-at-14-45-23.png" />
 
 Testing Environment : 
 
