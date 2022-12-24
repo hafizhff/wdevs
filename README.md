@@ -6,7 +6,7 @@ Here some features on this plugin :
 2. Content can be customized and use wyswyg editor
 3. Content can be show based on the customer group (can select multiple customer groups for one content)
 4. Validation to prevent customer group have double customer bar content.
-5. Content cab be set dynamically, can be stored, edited and deleted
+5. Content can be set dynamically, it can be stored, edited and deleted
 6. Work with cache like FPC
 7. Plugin have no dependecies and portability with other extension, in other words you only need this plugin to make it running
 8. Plugin support using blank or luma theme.
